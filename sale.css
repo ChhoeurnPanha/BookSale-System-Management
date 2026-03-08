@@ -1,0 +1,274 @@
+/* ===============================
+   SALE PAGE LAYOUT
+=================================*/
+
+.sale-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.sale-left {
+  flex: 2;
+}
+
+.sale-right {
+  flex: 1;
+}
+
+/* ===============================
+   CARD STYLE
+=================================*/
+
+.sale-card,
+.bill-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sale-card h3,
+.bill-card h3 {
+  margin-bottom: 15px;
+  font-size: 19px;
+  color: #0d0f11;
+  font-weight: 600;
+}
+
+/* ===============================
+   FORM STYLE
+=================================*/
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  border-color: #3498db;
+}
+
+/* ===============================
+   TABLE STYLE
+=================================*/
+
+.sale-table,
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.sale-table th,
+.sale-table td,
+.bill-table th,
+.bill-table td {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.sale-table th,
+.bill-table th {
+  background: #f9fafc;
+  font-weight: 600;
+  color: #555;
+}
+
+/* ===============================
+   PAYMENT SECTION
+=================================*/
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.grand-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecf8f2;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.grand-total-row .label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.grand-total-row .amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* ===============================
+   BILL SECTION
+=================================*/
+
+.bill-empty {
+  text-align: center;
+  padding: 30px 10px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.bill-empty .icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bill-total-box {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  background: #f1f6ff;
+  padding: 12px;
+  border-radius: 8px;
+}
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bt-label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.bt-amount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2980b9;
+}
+
+/* ===============================
+   BUTTONS
+=================================*/
+
+.btn-amber {
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-green {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-blue {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-red {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.sale-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.qty-btn {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+  background: rgba(255, 255, 255, 0.767);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.637);
+  box-shadow: none;
+  border-radius: 5px;
+  letter-spacing: 0;
+  text-transform: none;
+  cursor: pointer;
+}
+.remove-btn {
+  background: transparent;
+  color: red;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid rgba(139, 32, 32, 0.25);
+  box-shadow: none;
+  padding: 5px 12px;
+  border-radius: 3px;
+}
+
+.remove-btn:hover {
+  background: rgba(139, 32, 32, 0.07);
+}
+
+.qty-btn:hover {
+  background: whitesmoke;
+}
+
+/* Hover Effects */
+
+.btn-amber:hover {
+  background: #2279b3;
+}
+.btn-green:hover {
+  background: #219150;
+}
+.btn-blue:hover {
+  background: #2c80b4;
+}
+.btn-red:hover {
+  background: #c0392b;
+}
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+
+@media (max-width: 1000px) {
+  .sale-container {
+    flex-direction: column;
+  }
+}
